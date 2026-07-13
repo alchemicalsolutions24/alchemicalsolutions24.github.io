@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Center - 9 to Zen™</title>
+    <style>
+        :root {
+            --bg-color: #fdfdfd;
+            --text-color: #2d3748;
+            --accent-color: #4a5568;
+            --border-color: #e2e8f0;
+            --highlight-bg: #f7fafc;
+            --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border: 1px solid var(--border-color);
+        }
+
+        header {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .meta-info {
+            font-size: 0.9rem;
+            color: #718096;
+            font-weight: 500;
+        }
+
+        .meta-info span {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .nav-box {
+            background-color: var(--highlight-bg);
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 32px;
+        }
+
+        .nav-box h2 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 12px;
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-top: 0;
+        }
+
+        .nav-box ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+
+        .nav-box li {
+            margin-bottom: 6px;
+        }
+
+        .nav-box li:last-child {
+            margin-bottom: 0;
+        }
+
+        .nav-box a {
+            color: #3182ce;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .nav-box a:hover {
+            text-decoration: underline;
+        }
+
+        .part-heading {
+            font-size: 1.4rem;
+            background: #2d3748;
+            color: #ffffff;
+            padding: 10px 16px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-radius: 4px;
+        }
+
+        section {
+            margin-bottom: 32px;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            color: #1a202c;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+            margin-top: 24px;
+        }
+
+        h3 {
+            font-size: 1.05rem;
+            color: #4a5568;
+            margin-top: 16px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 14px;
+            font-size: 1rem;
+            color: #4a5568;
+            text-align: justify;
+        }
+
+        ul {
+            margin-bottom: 16px;
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #4a5568;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 24px;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--highlight-bg);
+            font-weight: 600;
+            color: #1a202c;
+            width: 25%;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 16px 8px;
+            }
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.4rem;
+            }
+            h2 {
+                font-size: 1.15rem;
+            }
+            table, tr, th, td {
+                display: block;
+                width: 100%;
+            }
+            th {
+                background-color: var(--highlight-bg);
+                border-bottom: none;
+            }
+            td {
+                border-top: none;
+                margin-bottom: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Master Privacy Policy & Regional Disclosures</h1>
+        <div class="meta-info">
+            Effective Date: January 1, 2026 <span>|</span> Last Updated: June 23, 2026
+        </div>
+    </header>
+
+    <p>Alchemical Solutions LLC ("Company," "we," "us," or "our") operates the mobile game 9 to Zen™ and its associated backend cloud infrastructure (collectively, the "Services"). We are committed to protecting your privacy and being transparent about how we handle your data.</p>
+    <p>This Master Privacy Policy applies to all users globally. If you reside in California or the European Economic Area/United Kingdom, please use the navigation shortcuts below to jump directly to the specific, mandatory legal disclosures that apply to your jurisdiction.</p>
+
+    <div class="nav-box">
+        <h2>Quick Privacy Navigation</h2>
+        <ul>
+            <li><a href="#part1">1. GLOBAL PRIVACY POLICY (Applies to All Users)</a></li>
+            <li><a href="#part2">2. CALIFORNIA PRIVACY NOTICE (CCPA/CPRA Residents)</a></li>
+            <li><a href="#part3">3. EU/UK DATA SUBJECT RIGHTS (GDPR / European Residents)</a></li>
+        </ul>
+    </div>
+
+    <!-- PART 1 -->
+    <div id="part1" class="part-heading">Part 1: Global Privacy Policy</div>
+    <p>This section applies to all players who download, install, or play 9 to Zen™, regardless of geographic location.</p>
+
+    <section>
+        <h2>1. Data We Collect and How We Collect It</h2>
+        <p>Because 9 to Zen™ uses a "Guest First" architecture, we do not require you to provide your proper legal name, real-world address, or email to play. However, our systems automatically collect certain digital identifiers to operate the game safely and display ads.</p>
+        
+        <h3>A. Information Collected Automatically</h3>
+        <p>When you interact with the Services, our game-focused backend service provider (Microsoft PlayFab) and our third-party advertising partners automatically log:</p>
+        <ul>
+            <li><strong>Device Identifiers:</strong> Your IP address, Internet Service Provider (ISP), hardware model, operating system version, and unique device tracking tokens (such as Apple's IDFA or Google's Advertising ID / GAID).</li>
+            <li><strong>Gameplay Telemetry & Metrics:</strong> Your custom public leaderboard name (or your fallback placeholder like "Anonymous Seeker"), high scores, active puzzle matrix progression, total "Trove tile counts," and active daily login streak loops.</li>
+            <li><strong>Network & Connection Logs:</strong> Time and date stamps of your game initialization, server requests, and network connection status.</li>
+        </ul>
+
+        <h3>B. Information You Provide Voluntarily</h3>
+        <p>If you contact our customer support team directly via email, we will collect your email address, your platform store billing transaction history (for resolving purchase disputes), and any text or screenshots you send to help us troubleshoot your technical issues.</p>
+    </section>
+
+    <section>
+        <h2>2. How We Use Your Data</h2>
+        <p>We process the data we collect for the following core, gameplay-focused operational purposes:</p>
+        <ul>
+            <li><strong>Executing the Game Flow:</strong> Synchronizing your Zen Profile, milestones, and puzzle data across multiple devices via our Microsoft PlayFab backend.</li>
+            <li><strong>Maintaining Fair Play:</strong> Analyzing score velocity and telemetry to prevent cheating, hacking, or time-traveling clock exploits on our global leaderboards.</li>
+            <li><strong>Monetization and Ad Operations:</strong> Serving intermittent interstitial, banner, and optional rewarded ads to keep the basic version of the game free to play.</li>
+            <li><strong>Customer Support:</strong> Resolving platform transaction discrepancies or processing voluntary profile modifications.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>3. Sharing and Disclosing Data</h2>
+        <p>We do not sell your personal data to data brokers for cash. However, we do share specific digital identifiers with trusted third-party service providers to manage the game application:</p>
+        <ul>
+            <li><strong>Cloud Backend Infrastructure:</strong> We transmit and store your gameplay data securely using Microsoft PlayFab servers.</li>
+            <li><strong>Advertising Partners:</strong> We integrate SDKs from major mobile ad networks to deliver in-game marketing. These partners include: Google AdMob, AppLovin, Unity Ads, Liftoff Monetize (Vungle), Mintegral, Pangle, and InMobi. These networks collect device tracking tokens to determine ad placement and performance metrics.</li>
+        </ul>
+    </section>
+
+    <!-- PART 2 -->
+    <div id="part2" class="part-heading">Part 2: California Privacy Notice</div>
+    <p><strong>Notice for California Residents (CCPA/CPRA)</strong></p>
+    <p>This section supplements our Global Policy and applies exclusively to residents of the State of California under the California Consumer Privacy Act of 2018, as amended by the California Privacy Rights Act of 2020 (collectively, the "CCPA/CPRA").</p>
+
+    <section>
+        <h2>4. Categories of Personal Information Collected and Disclosed</h2>
+        <p>The tables below map out the specific categories of personal information Alchemical Solutions LLC has collected and disclosed for a business purpose over the preceding twelve (12) months:</p>
+
+        <table>
+            <tr><th>Category</th><td><strong>Identifiers</strong></td></tr>
+            <tr><th>Data</th><td>IP address, Apple IDFA, Google GAID, custom leaderboard profile name.</td></tr>
+            <tr><th>Sources</th><td>Automated tracking SDKs; direct user input.</td></tr>
+            <tr><th>Purpose</th><td>Device recognition, ad tracking, backend synchronization.</td></tr>
+            <tr><th>Recipients</th><td>Microsoft PlayFab; Integrated Third-Party Ad Networks.</td></tr>
+        </table>
+
+        <table>
+            <tr><th>Category</th><td><strong>Commercial Information</strong></td></tr>
+            <tr><th>Data</th><td>Records of purchasing the premium Ascend Level ($9.99 USD) or utilizing Streak Protection Shields.</td></tr>
+            <tr><th>Sources</th><td>Platform Store Receipts (Apple/Google).</td></tr>
+            <tr><th>Purpose</th><td>Validating premium status entitlements and processing billing support.</td></tr>
+            <tr><th>Recipients</th><td>Microsoft PlayFab; Platform Marketplaces.</td></tr>
+        </table>
+
+        <table>
+            <tr><th>Category</th><td><strong>Internet / Electronic Network Activity</strong></td></tr>
+            <tr><th>Data</th><td>Gameplay telemetry, tile count scores, daily streak loop timestamps, and app crash logs.</td></tr>
+            <tr><th>Sources</th><td>Automated background data transmission.</td></tr>
+            <tr><th>Purpose</th><td>Optimizing server stability, detecting leaderboard cheating exploits.</td></tr>
+            <tr><th>Recipients</th><td>Microsoft PlayFab; Internal analytics tools.</td></tr>
+        </table>
+
+        <table>
+            <tr><th>Category</th><td><strong>Geolocation Data</strong></td></tr>
+            <tr><th>Data</th><td>General, imprecise coarse geographic location derived via IP address check (Country/State level).</td></tr>
+            <tr><th>Sources</th><td>Automated network check during startup.</td></tr>
+            <tr><th>Purpose</th><td>Ensuring localized privacy compliance and serving regional ads.</td></tr>
+            <tr><th>Recipients</th><td>Third-Party Ad Networks.</td></tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>5. Notice of "Selling" or "Sharing" Data</h2>
+        <p>Under the CCPA, "selling" data includes disclosing it to a third party for monetary or valuable consideration, and "sharing" refers explicitly to disclosing data for cross-context behavioral advertising.</p>
+        <ul>
+            <li>We do not "sell" your personal information for cash.</li>
+            <li>We do "share" your device identifiers (IDFA/GAID) and coarse location data with our third-party advertising partners to deliver personalized, behavioral advertisements. This activity qualifies as a "sale" or "share" under CCPA/CPRA definitions.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>6. Your Rights Under California Law</h2>
+        <p>If you are a resident of California, you possess the following statutory rights regarding your data:</p>
+        <ul>
+            <li><strong>The Right to Know:</strong> You may request that we disclose what specific personal information we have collected, used, and shared about you over the past 12 months.</li>
+            <li><strong>The Right to Delete:</strong> You may request that we delete the personal information we have collected from you, subject to certain legal exceptions (such as maintaining active transactions or preventing fraud).</li>
+            <li><strong>The Right to Opt-Out of Selling or Sharing:</strong> You have the absolute right to direct us to stop sharing your data for personalized, targeted advertising.</li>
+            <li><strong>The Right to Non-Discrimination:</strong> We will never penalize you, alter your game mechanics, or restrict your ability to play 9 to Zen™ if you choose to exercise your CCPA privacy rights.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>7. How to Exercise Your Rights (CCPA)</h2>
+        <ul>
+            <li><strong>To Opt-Out of Personalization:</strong> Open the game application, navigate to the Settings menu, select Legal & Privacy, and adjust your preferences within the Privacy Center toggle interface. Alternatively, you can utilize the native "Limit Ad Tracking" settings located within your iOS or Android system device configurations.</li>
+            <li><strong>To Request Deletion or Access:</strong> Send a formal written request via email to our privacy team at <a href="mailto:alchemicalsolutions24@gmail.com">alchemicalsolutions24@gmail.com</a>. Because your game account is managed anonymously via Microsoft PlayFab, you must provide your exact, unique Zen Profile ID or a screenshot of your localized settings string to enable us to locate and verify your data record.</li>
+        </ul>
+    </section>
+
+    <!-- PART 3 -->
+    <div id="part3" class="part-heading">Part 3: EU/UK Data Subject Rights (GDPR Notice)</div>
+    <p><strong>Notice for Residents of the EEA, United Kingdom, and Switzerland</strong></p>
+    <p>This section supplements our Global Policy and applies exclusively to users located within the European Economic Area (EEA), the United Kingdom, and Switzerland under the General Data Protection Regulation ("GDPR") and the UK Data Protection Act 2018.</p>
+
+    <section>
+        <h2>8. Identity of the Data Controller</h2>
+        <p>The data controller responsible for the processing of personal data for 9 to Zen™ is:</p>
+        <p><strong>Alchemical Solutions LLC</strong><br>
+        [Insert Business Physical Address]<br>
+        Contact Email: [Insert Privacy/DPO Email Address]</p>
+    </section>
+
+    <section>
+        <h2>9. Lawful Bases for Data Processing</h2>
+        <p>Under GDPR Article 6, we must rely on explicit legal frameworks to handle your data. We process your data under the following conditions:</p>
+        <ul>
+            <li><strong>Performance of a Contract (Art. 6(1)(b) GDPR):</strong> We process your core gameplay data, save states, and leaderboard rankings via Microsoft PlayFab because it is strictly necessary to deliver the gameplay services, protect your active streak configurations, and execute the consumer contract you initiated by downloading the software.</li>
+            <li><strong>Consent (Art. 6(1)(a) GDPR):</strong> We and our advertising networks process your unique mobile advertising identifiers (IDFA/GAID) for personalized, behavioral advertising only if you provide explicit, affirmative consent via our in-game GDPR compliance tracking pop-up overlay during your initial application startup.</li>
+            <li><strong>Legitimate Interests (Art. 6(1)(f) GDPR):</strong> We process basic network telemetry and app stability logs to safeguard our platform security, balance our internal virtual tile economy, and identify fraudulent leaderboard manipulation exploits.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>10. Your Rights Under the GDPR</h2>
+        <p>As a data subject in the EU or UK, you possess comprehensive rights protecting your digital identity:</p>
+        <ul>
+            <li><strong>Right of Access (Art. 15):</strong> The right to request copies of the personal data we hold about you.</li>
+            <li><strong>Right to Erasure / "Right to be Forgotten" (Art. 17):</strong> The right to request that we wipe your Zen Profile cloud save data from our backend servers.</li>
+            <li><strong>Right to Restrict Processing (Art. 18):</strong> The right to demand that we stop modifying or utilizing your data while a legal dispute is pending.</li>
+            <li><strong>Right to Data Portability (Art. 20):</strong> The right to receive your structured gameplay data in a clean, machine-readable format.</li>
+            <li><strong>Right to Withdraw Consent (Art. 7(3)):</strong> The right to revoke your marketing tracking choices at any exact moment.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>11. International Data Transfers</h2>
+        <p>Alchemical Solutions LLC operates out of the United States. Gameplay metrics and profile sync fields captured within 9 to Zen™ are transferred to and processed on secure servers located within the United States via our infrastructure host, Microsoft PlayFab.</p>
+        <p>To ensure your data remains protected when crossing international borders, we rely on standard contract safeguards, including the European Commission's Standard Contractual Clauses (SCCs), incorporated directly into our agreements with third-party service providers.</p>
+    </section>
+
+    <section>
+        <h2>12. Exercising Your GDPR Rights and Data Retention</h2>
+        <ul>
+            <li><strong>Withdrawing Consent:</strong> You can instantly stop targeted ad tracking at any time by going to Settings > Legal & Privacy > Privacy Center and toggling off personalized advertising tracking.</li>
+            <li><strong>Data Requests & Erasure:</strong> To completely wipe your data or request an access report, submit an email request to [Insert Privacy Email]. To safeguard user identity, you must provide your anonymous internal Zen Profile ID code so we can verify the link between your device and the cloud record.</li>
+            <li><strong>Data Lifespan Threshold:</strong> If your Zen Profile remains completely dormant on our Microsoft PlayFab servers for a rolling period exceeding twelve (12) consecutive months, your records will be flagged for automatic data cleansing and permanently erased, instantly terminating storage requirements under this policy.</li>
+            <li><strong>Right to Lodge a Complaint:</strong> If you believe our data processing operations violate GDPR mandates, you possess a legal right to lodge a formal complaint with a supervisory Data Protection Authority (DPA) located within your specific EU Member State or UK residence.</li>
+        </ul>
+    </section>
+
+    <!-- PART 4 -->
+    <div class="part-heading">Part 4: Changes to this Policy</div>
+    <section>
+        <p>Alchemical Solutions LLC reserves the right to modify, rewrite, or expand this Master Privacy Policy at any time to remain compliant with evolving state, federal, or international privacy regulations. If we make material modifications, we will update the "Last Updated" date at the top of this document and notify players via prominent alerts placed directly inside the main application settings menu. Your continued play of 9 to Zen™ following an update constitutes your binding agreement to the revised privacy framework.</p>
+    </section>
+</div>
+
+</body>
+</html>
