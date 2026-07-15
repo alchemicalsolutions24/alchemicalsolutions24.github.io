@@ -29,13 +29,26 @@
             line-height: 1.6;
             padding: 40px 20px;
         }
-<nav>
-    <a href="../../../">Home</a>
-    |
-    <a href="../../">9💫 to Zen</a>
-    |
-    <a href="../">Legal Home</a>
-</nav>
+
+        /* Styling for the navigation bar */
+        nav {
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+            font-size: 0.95rem;
+            color: #718096;
+        }
+
+        nav a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+            margin: 0 5px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -193,6 +206,15 @@
     </style>
 </head>
 <body>
+
+<!-- Repositioned navigation bar with corrected relative paths -->
+<nav>
+    <a href="/">Home</a>
+    |
+    <a href="../../">9💫 to Zen</a>
+    |
+    <a href="../">Legal Home</a>
+</nav>
 
 <div class="container">
     <header>
