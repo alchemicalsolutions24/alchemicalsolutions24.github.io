@@ -1,224 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alchemical Solutions</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-<title>Alchemical Solutions</title>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(to bottom, #f8faf9, #eef5f2);
+            color: #2d2d2d;
+        }
 
-<style>
+        /* ---------- Header ---------- */
+        header {
+            background: #2c6e49;
+            color: white;
+            box-shadow: 0 3px 10px rgba(0,0,0,.15);
+        }
 
-*{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
-}
+        .header-container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 18px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
 
-body{
-    font-family:"Segoe UI",Arial,sans-serif;
-    background:linear-gradient(to bottom,#f8faf9,#eef5f2);
-    color:#2d2d2d;
-}
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: .5px;
+        }
 
-/* ---------- Header ---------- */
+        nav {
+            display: flex;
+            gap: 24px;
+        }
 
-header{
-    background:#2c6e49;
-    color:white;
-    box-shadow:0 3px 10px rgba(0,0,0,.15);
-}
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: .25s;
+        }
 
-.header-container{
-    max-width:1100px;
-    margin:auto;
-    padding:18px 30px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    flex-wrap:wrap;
-}
+        nav a:hover {
+            opacity: .8;
+        }
 
-.logo{
-    font-size:1.6rem;
-    font-weight:700;
-    letter-spacing:.5px;
-}
+        /* ---------- Main ---------- */
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 170px);
+            padding: 50px 20px;
+        }
 
-nav{
-    display:flex;
-    gap:24px;
-}
+        .container {
+            max-width: 850px;
+            width: 100%;
+            background: white;
+            padding: 60px 50px;
+            border-radius: 18px;
+            text-align: center;
+            box-shadow: 0 8px 30px rgba(0,0,0,.08);
+        }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    font-weight:600;
-    transition:.25s;
-}
+        h1 {
+            color: #2c6e49;
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
 
-nav a:hover{
-    opacity:.8;
-}
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 40px;
+        }
 
-/* ---------- Main ---------- */
+        /* ---------- Buttons ---------- */
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+        }
 
-main{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:calc(100vh - 170px);
-    padding:50px 20px;
-}
+        .button {
+            display: block;
+            background: #2c6e49;
+            color: white;
+            text-decoration: none;
+            padding: 18px;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: .25s;
+        }
 
-.container{
-    max-width:850px;
-    width:100%;
-    background:white;
-    padding:60px 50px;
-    border-radius:18px;
-    text-align:center;
-    box-shadow:0 8px 30px rgba(0,0,0,.08);
-}
+        .button:hover {
+            background: #24593b;
+            transform: translateY(-2px);
+        }
 
-h1{
-    color:#2c6e49;
-    font-size:3rem;
-    margin-bottom:20px;
-}
+        /* ---------- Footer ---------- */
+        footer {
+            text-align: center;
+            color: #777;
+            padding: 30px;
+            font-size: .9rem;
+        }
 
-p{
-    font-size:1.2rem;
-    line-height:1.8;
-    color:#555;
-    margin-bottom:40px;
-}
+        /* ---------- Mobile ---------- */
+        @media (max-width: 700px) {
+            .header-container {
+                flex-direction: column;
+                gap: 18px;
+            }
 
-/* ---------- Buttons ---------- */
+            nav {
+                flex-direction: column;
+                text-align: center;
+                gap: 12px;
+            }
 
-.links{
-    display:flex;
-    flex-direction:column;
-    gap:22px;
-}
+            .container {
+                padding: 40px 25px;
+            }
 
-.button{
-    display:block;
-    background:#2c6e49;
-    color:white;
-    text-decoration:none;
-    padding:18px;
-    border-radius:10px;
-    font-size:1.2rem;
-    font-weight:600;
-    transition:.25s;
-}
-
-.button:hover{
-    background:#24593b;
-    transform:translateY(-2px);
-}
-
-/* ---------- Footer ---------- */
-
-footer{
-    text-align:center;
-    color:#777;
-    padding:30px;
-    font-size:.9rem;
-}
-
-/* ---------- Mobile ---------- */
-
-@media (max-width:700px){
-
-.header-container{
-    flex-direction:column;
-    gap:18px;
-}
-
-nav{
-    flex-direction:column;
-    text-align:center;
-    gap:12px;
-}
-
-.container{
-    padding:40px 25px;
-}
-
-h1{
-    font-size:2.3rem;
-}
-
-}
-
-</style>
-
+            h1 {
+                font-size: 2.3rem;
+            }
+        }
+    </style>
 </head>
-
 <body>
 
-<header>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                Alchemical Solutions
+            </div>
+            <nav>
+                <a href="/">Home</a>
+                <!-- FIXED: Updated path to match GitHub folder case and characters -->
+                <a href="./9-to-Zen/">9-to-Zen</a>
+                <a href="https://www.amazon.com/Apothecary-Spirits-Prescriptions-Classic-Cocktails-ebook/dp/B07GNJDQZ2/ref=tmm_kin_swatch_0" target="_blank" rel="noopener noreferrer">
+                    Apothecary of Spirits
+                </a>
+            </nav>
+        </div>
+    </header>
 
-<div class="header-container">
+    <main>
+        <div class="container">
+            <h1>Welcome to Alchemical Solutions</h1>
+            <p>
+                Explore our collection of interactive experiences designed to inspire mindfulness, creativity, and discovery. Our games blend thoughtful design with engaging gameplay to create memorable digital experiences.
+            </p>
 
-<div class="logo">
-Alchemical Solutions
-</div>
+            <div class="links">
+                <!-- FIXED: Updated path to match GitHub folder case and characters -->
+                <a class="button" href="./9-to-Zen/">
+                    🧘 9-to-Zen
+                </a>
+                <a class="button" href="https://www.amazon.com/Apothecary-Spirits-Prescriptions-Classic-Cocktails-ebook/dp/B07GNJDQZ2/ref=tmm_kin_swatch_0" target="_blank" rel="noopener noreferrer">
+                    🧪 Apothecary of Spirits
+                </a>
+            </div>
+        </div>
+    </main> <!-- FIXED: Removed duplicate tags and cleaned layout structure -->
 
-<nav>
-
-<a href="/">Home</a>
-
-<a href="./9%F0%9F%92%AB%20to%20Zen/">
-9-to-Zen
-</a>
-
-<a href="https://www.amazon.com/Apothecary-Spirits-Prescriptions-Classic-Cocktails-ebook/dp/B07GNJDQZ2/ref=tmm_kin_swatch_0" target="_blank" rel="noopener noreferrer">
-Apothecary of Spirits
-</a>
-
-</nav>
-
-</div>
-
-</header>
-
-<main>
-
-<div class="container">
-
-<h1>Welcome to Alchemical Solutions</h1>
-
-<p>
-Explore our collection of interactive experiences designed to inspire mindfulness, creativity, and discovery. Our games blend thoughtful design with engaging gameplay to create memorable digital experiences.
-</p>
-
-<div class="links">
-
-<a class="button" href="./9%F0%9F%92%AB%20to%20Zen/">
-🧘 9-to-Zen
-</a>
-
-<a class="button" href="https://www.amazon.com/Apothecary-Spirits-Prescriptions-Classic-Cocktails-ebook/dp/B07GNJDQZ2/ref=tmm_kin_swatch_0" target="_blank" rel="noopener noreferrer">
-🧪 Apothecary of Spirits
-</a>
-
-</div>
-
-</div>
-
-</main>
-
-</div>
-
-</main>
-
-<footer>
-
-© 2026 Alchemical Solutions. All Rights Reserved.
-
-</footer>
+    <footer>
+        &copy; 2026 Alchemical Solutions. All Rights Reserved.
+    </footer>
 
 </body>
 </html>
