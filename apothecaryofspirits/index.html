@@ -3,11 +3,86 @@
 
 <head>
     <title>Apothecary of Spirits</title>
+    <style>
+        /* Base page layout to keep footer at the bottom if page content is short */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        /* Main content area */
+        main {
+            flex: 1;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #222222;
+            margin-top: 20px;
+        }
+
+        /* Footer and Disclaimer Styling */
+        footer {
+            width: 100%;
+            background-color: #ffffff;
+            padding: 20px 0;
+            box-sizing: border-box;
+        }
+
+        .legal-disclaimer-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .legal-disclaimer-text {
+            font-size: 0.75rem; /* ~12px to keep it readable but secondary */
+            line-height: 1.6;
+            color: #666666; /* Muted gray for a professional look */
+            text-align: center;
+            margin: 0;
+            letter-spacing: 0.02em;
+            border-top: 1px solid #e0e0e0; /* Subtle dividing line */
+            padding-top: 15px;
+        }
+
+        /* Dark mode compatibility */
+        @media (prefers-color-scheme: dark) {
+            html, body, footer {
+                background-color: #121212;
+            }
+            h1 {
+                color: #ffffff;
+            }
+            .legal-disclaimer-text {
+                color: #aaaaaa;
+                border-top-color: #333333;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<h1>Apothecary of Spririts</h1>
+    <!-- Main Content Area -->
+    <main>
+        <h1>Apothecary of Spirits</h1>
+    </main>
+
+    <!-- Footer Area with Legal Disclaimer -->
+    <footer>
+        <div class="legal-disclaimer-container">
+            <p class="legal-disclaimer-text">
+                This website and its content, including cocktail recipes, are intended strictly for historical, educational, and entertainment purposes for individuals of legal drinking age (21+ in the United States). Apothecary of Spirits LLC does not condone or promote illegal or irresponsible consumption of alcohol. Please drink responsibly.
+            </p>
+        </div>
+    </footer>
 
 </body>
 
