@@ -192,7 +192,7 @@ transform:translateY(-35px) translateX(30px);
 }
 
 /************************************************/
-/* Typography                                   */
+/* Typography & Logo                            */
 /************************************************/
 
 .logo{
@@ -211,6 +211,27 @@ transform:translateY(-35px) translateX(30px);
 
     0 0 25px rgba(255,220,120,.18);
 
+}
+
+.app-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto 30px auto;
+}
+
+.app-logo {
+    max-width: 180px;
+    height: auto;
+    border-radius: 24px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 215, 120, 0.2);
+    border: 1px solid rgba(255, 215, 120, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.app-logo:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 28px rgba(255, 215, 120, 0.35);
 }
 
 .tagline{
@@ -341,6 +362,14 @@ letter-spacing:5px;
 
 }
 
+.app-logo {
+
+max-width:140px;
+
+border-radius:18px;
+
+}
+
 .container{
 
 padding:45px 25px;
@@ -380,6 +409,10 @@ height:52px;
 <div class="container">
 
 <h1 class="logo">9 to Zen™</h1>
+
+<div class="app-logo-container">
+    <img src="images/9%20to%20Zen%20TM%20Logo.jpeg" alt="9 to Zen Logo" class="app-logo">
+</div>
 
 <p class="tagline">
 Transform everyday moments into mindful experiences.
