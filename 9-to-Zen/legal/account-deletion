@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account & Data Deletion Request - 9💫 to Zen</title>
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --accent-color: #6366f1;
+            --accent-hover: #4f46e5;
+            --danger-color: #ef4444;
+            --danger-hover: #dc2626;
+            --border-color: #cbd5e1;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        section {
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            color: var(--text-primary);
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid var(--accent-color);
+            display: inline-block;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            margin: 15px 0 10px 0;
+        }
+
+        p, ol, ul {
+            color: var(--text-secondary);
+            font-size: 0.975rem;
+            margin-bottom: 15px;
+        }
+
+        ol, ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .card {
+            background-color: #f1f5f9;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 24px;
+            margin-top: 15px;
+        }
+
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-top: 20px;
+        }
+
+        @media (min-width: 600px) {
+            .btn-group {
+                flex-direction: row;
+            }
+        }
+
+        /* High-Resolution Vector OAuth Branding Buttons */
+        .sso-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 48px;
+            padding: 0 24px;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .sso-btn svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+
+        /* Google Brand Link Button Styling */
+        .btn-google {
+            background-color: #ffffff;
+            color: #1f1f1f;
+            border: 1px solid #747775;
+        }
+
+        .btn-google:hover {
+            background-color: #f8f9fa;
+            border-color: #5e605e;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+            text-decoration: none;
+        }
+
+        /* Apple Brand Link Button Styling */
+        .btn-apple {
+            background-color: #000000;
+            color: #ffffff;
+            border: 1px solid #000000;
+        }
+
+        .btn-apple:hover {
+            background-color: #1a1a1a;
+            border-color: #1a1a1a;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            text-decoration: none;
+        }
+
+        .btn-danger {
+            background-color: var(--danger-color);
+            color: #ffffff;
+            border: none;
+            padding: 12px 24px;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .btn-danger:hover {
+            background-color: var(--danger-hover);
+        }
+
+        .warning-box {
+            background-color: #fef2f2;
+            border-left: 4px solid var(--danger-color);
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        .warning-box p {
+            color: #991b1b;
+            margin-bottom: 0;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Account & Data Deletion Request</h1>
+        <p class="subtitle">App: <strong>9💫 to Zen</strong></p>
+    </header>
+
+    <p>At <strong>9💫 to Zen</strong>, we respect your privacy and give you full control over your personal data. In accordance with Google Play Store and Apple App Store policies, as well as global privacy regulations (GDPR, CCPA), you can request the permanent deletion of your account and associated data at any time.</p>
+
+    <section>
+        <h2>Option 1: Delete Your Account In-App (Recommended)</h2>
+        <p>If you still have the app installed on your device:</p>
+        <ol>
+            <li>Open the <strong>9💫 to Zen</strong> app.</li>
+            <li>Navigate to <strong>Settings &gt; Account &gt; Delete Account</strong>.</li>
+            <li>Confirm your selection. Your account and personal data will be deleted immediately.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Option 2: Self-Guided Web Account Deletion</h2>
+        <p>If you have uninstalled the app or prefer to manage your account from a browser, you can log in below using your single sign-on provider to delete your account directly.</p>
+
+        <div class="card">
+            <h3>Step 1: Sign in to Verify Ownership</h3>
+            <p>Click the button corresponding to the sign-in method you used to create your account:</p>
+            <div class="btn-group">
+                <!-- High-Resolution Active Google Sign-In Link -->
+                <a href="javascript:void(0)" class="sso-btn btn-google" onclick="handleGoogleSignIn()" role="button">
+                    <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+                        <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.11-6.72-4.96H1.29v3.13C3.26 21.3 7.31 24 12 24z"/>
+                        <path fill="#FBBC05" d="M5.28 14.24c-.25-.72-.38-1.49-.38-2.24s.13-1.52.38-2.24V6.63H1.29C.47 8.24 0 10.06 0 12s.47 3.76 1.29 5.37l3.99-3.13z"/>
+                        <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.31 0 3.26 2.7 1.29 6.63l3.99 3.13c.95-2.85 3.6-4.96 6.72-4.96z"/>
+                    </svg>
+                    Continue with Google
+                </a>
+
+                <!-- High-Resolution Active Apple Sign-In Link -->
+                <a href="javascript:void(0)" class="sso-btn btn-apple" onclick="handleAppleSignIn()" role="button">
+                    <svg viewBox="0 0 170 170" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                        <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.34.13-9.13-1.9-14.38-6.08-3.48-2.81-7.48-7.61-12.01-14.4-6.21-9.33-11.12-19.78-14.74-31.35-3.62-11.57-5.43-22.38-5.43-32.42 0-14.75 3.86-26.98 11.59-36.68 7.73-9.7 17.51-14.67 29.35-14.92 4.8 0 10.02 1.17 15.66 3.52 5.65 2.34 9.47 3.52 11.48 3.52 1.63 0 5.61-1.25 11.95-3.75 6.33-2.49 11.83-3.6 16.5-3.32 12.18.98 21.82 5.51 28.93 13.6-10.66 6.42-15.88 15.42-15.66 27 0 9.03 3.37 16.63 10.12 22.8 6.75 6.17 14.86 9.68 24.33 10.53-2.5 7.29-5.77 14.53-9.82 21.72zm-28.53-114.7c0 6.86-2.5 13.4-7.51 19.63-5.01 6.22-11.23 10.09-18.66 11.59-.22-.87-.33-1.85-.33-2.94 0-6.75 2.61-13.29 7.84-19.63 5.22-6.35 11.54-10.18 18.96-11.49.22.88.33 1.83.33 2.84z"/>
+                    </svg>
+                    Sign in with Apple
+                </a>
+            </div>
+        </div>
+
+        <div class="card" id="deletion-confirm-card" style="display: none; margin-top: 20px;">
+            <h3>Step 2: Confirm Permanent Deletion</h3>
+            <p>Authenticated as: <strong id="user-email">user@example.com</strong></p>
+            <div class="warning-box">
+                <p><strong>Warning:</strong> Clicking the button below will permanently delete your account, saved preferences, and associated profile data from our servers. This action cannot be undone.</p>
+            </div>
+            <button class="btn btn-danger" onclick="executeAccountDeletion()">Permanently Delete My Account</button>
+        </div>
+    </section>
+
+    <section>
+        <h2>Disconnecting Platform Permissions Directly</h2>
+        <p>You can also manage or revoke our app's access directly through your identity provider's security settings at any time:</p>
+        <ul>
+            <li><strong>Google Sign-In:</strong> Manage or revoke access via <a href="https://myaccount.google.com/connections" target="_blank" rel="noopener">Google Security &amp; Third-Party Connections</a>.</li>
+            <li><strong>Sign in with Apple:</strong> View or remove access via <a href="https://appleid.apple.com" target="_blank" rel="noopener">Apple ID Account Management</a> or on your iOS device under <strong>Settings &gt; [Your Name] &gt; Sign in with Apple</strong>.</li>
+        </ul>
+        <p><em>Note: Revoking access via Apple or Google revokes our token permission but does not automatically wipe existing records on our servers. Completing the self-guided web deletion above ensures your data is permanently removed from our databases.</em></p>
+    </section>
+
+    <section>
+        <h2>What Data Will Be Deleted?</h2>
+        <p>When you complete the account deletion process:</p>
+        <ul>
+            <li><strong>Account Profile Data:</strong> Your name, email address, profile photo, and single sign-on identifiers (OAuth IDs) are permanently wiped from our active databases.</li>
+            <li><strong>User Content &amp; Preferences:</strong> Saved settings, preferences, app state, and user-generated content are permanently purged.</li>
+            <li><strong>Active Sessions:</strong> All active login sessions across your devices are immediately invalidated.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>What Data May Be Retained &amp; Retention Periods</h2>
+        <p>To satisfy legal requirements, prevent fraud, and comply with security standards, certain limited data may be retained after account deletion:</p>
+        <ol>
+            <li><strong>Transaction &amp; Billing Records:</strong> If you made in-app purchases, transaction IDs, tax records, and receipts are retained for <strong>5 to 7 years</strong> as required by financial and tax compliance laws.</li>
+            <li><strong>Security &amp; Fraud Logs:</strong> Hashed user identifiers, IP access logs, and security audit records are retained for up to <strong>180 days</strong> to detect and prevent security breaches, system abuse, or invalid ad traffic.</li>
+            <li><strong>Deletion Compliance Audit Trail:</strong> A minimal log recording that a deletion request was completed (containing a timestamp and anonymized ID) is retained for <strong>3 to 5 years</strong> to demonstrate regulatory compliance.</li>
+            <li><strong>Ad Network SDK Identifiers:</strong> Third-party advertising partners (such as AdMob, AppLovin, or Unity Ads) process device advertising IDs and telemetry independently according to their respective privacy policies for fraud prevention and reporting.</li>
+        </ol>
+    </section>
+
+    <footer>
+        <p>If you run into issues completing web authentication or need technical assistance deleting your account, contact our Data Protection Team at <a href="mailto:contact@alchemical-solutions.com">contact@alchemical-solutions.com</a>.</p>
+    </footer>
+</div>
+
+<script>
+    function handleGoogleSignIn() {
+        console.log("Triggering Google OAuth flow...");
+        alert("Redirecting to Google Sign-In...");
+    }
+
+    function handleAppleSignIn() {
+        console.log("Triggering Apple OAuth flow...");
+        alert("Redirecting to Apple Sign-In...");
+    }
+
+    function executeAccountDeletion() {
+        alert("Account deletion request submitted successfully.");
+    }
+</script>
+
+</body>
+</html>
