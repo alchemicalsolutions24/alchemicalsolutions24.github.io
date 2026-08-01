@@ -5,128 +5,235 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service & EULA - 9 to Zen</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 40px 20px; line-height: 1.6; color: #333; }
-        h1 { color: #000; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        h2 { color: #444; margin-top: 30px; }
-        h3 { color: #555; margin-top: 20px; }
-        .meta { font-size: 0.9em; color: #666; margin-bottom: 30px; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 10px; }
-        .back-link { display: inline-block; margin-top: 50px; padding: 10px 20px; background: #f4f4f4; text-decoration: none; color: #333; border-radius: 5px; }
-        .back-link:hover { background: #e0e0e0; }
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #16a085;
+            --text-color: #333333;
+            --bg-color: #f9fbfd;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-bottom: 5px;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+        }
+
+        .meta-info {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            margin-bottom: 25px;
+        }
+
+        .notice-box {
+            background-color: #edf2f7;
+            border-left: 4px solid var(--primary-color);
+            padding: 15px;
+            margin-bottom: 30px;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            color: var(--accent-color);
+            font-size: 1.1rem;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p, li {
+            font-size: 1rem;
+            color: #4a5568;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: var(--primary-color);
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
 
-    <h1>Terms of Service</h1>
-    <div class="meta">
-        <p><strong>Effective Date:</strong> January 1, 2026</p>
-        <p><strong>Last Updated:</strong> June 23, 2026</p>
+<div class="container">
+    <a href="./" class="back-link">&larr; Back to Legal & Privacy Center</a>
+    
+    <h1>Terms of Service & End User License Agreement (EULA)</h1>
+    <div class="meta-info">
+        <strong>Last Updated:</strong> July 31, 2026 | <strong>Effective Date:</strong> July 31, 2026
     </div>
 
-    <p>Welcome to 9 to Zen™, a mobile puzzle application developed and operated by Alchemical Solutions LLC ("Company," "we," "us," or "our"). These Terms of Service ("Terms") govern your access to and use of the 9 to Zen™ mobile game, its websites, game-focused backend services, and any related content, features, or services (collectively, the "Services").</p>
-    
-    <p>Please read these Terms carefully before accessing or using the Services. By downloading, installing, accessing, or using the Services, you agree to be bound by these Terms and our Privacy Policy. If you do not agree to these Terms, you may not access or use the Services.</p>
+    <div class="notice-box">
+        PLEASE READ THIS TERMS OF SERVICE & END USER LICENSE AGREEMENT ("AGREEMENT") CAREFULLY BEFORE DOWNLOADING, INSTALLING, OR USING THE <strong>9 TO ZEN</strong> APPLICATION OR RELATED SERVICES. BY DOWNLOADING, INSTALLING, ACCESSING, OR USING THE APPLICATION, YOU AGREE TO BE BOUND BY THE TERMS OF THIS AGREEMENT.
+    </div>
 
-    <h2>1. ELIGIBILITY, MINOR USERS, & PRIVACY</h2>
-    <h3>1.1 Age Requirement</h3>
-    <p>You must be at least 13 years old (or the minimum legal age required in your country or state of residence, such as 16 in certain European Union jurisdictions under GDPR) to play 9 to Zen™ and use our Services.</p>
+    <h2>1. Overview and Agreement Structure</h2>
+    <p>This Agreement is a legally binding contract between you ("User," "you," or "your") and <strong>Alchemical Solutions</strong> ("Company," "we," "us," or "our"). It governs your access to and use of the <strong>9 to Zen</strong> mobile application, website, content, features, and associated services (collectively, the "Service").</p>
 
-    <h3>1.2 Minor Protection & Parental Consent</h3>
-    <p>If you are under the age of majority in your jurisdiction (a "Minor"), you represent and warrant that you have obtained the explicit permission of your parent or legal guardian to play 9 to Zen™ and to agree to these Terms.</p>
+    <h2>2. End User License Grant & Restrictions</h2>
+    <h3>2.1 License Grant</h3>
+    <p>Subject to your compliance with this Agreement, Alchemical Solutions grants you a limited, non-exclusive, non-transferable, non-sublicensable, revocable license to download, install, and use one copy of the 9 to Zen application on a mobile device or desktop that you own or control, solely for your personal, non-commercial use.</p>
+
+    <h3>2.2 License Restrictions</h3>
+    <p>You explicitly agree that you will not, directly or indirectly:</p>
     <ul>
-        <li><strong>Parental Responsibility:</strong> The parent or legal guardian of a Minor using the Services agrees to be bound by these Terms and is fully responsible for the Minor’s activity, including all financial transactions and in-game purchases.</li>
-        <li><strong>In-App Purchases:</strong> All in-game purchases made by Minors within 9 to Zen™ are presumed to be executed with the authorization of their parent or legal guardian. We recommend utilizing device-level parental controls (such as Apple’s "Ask to Buy" or Google Play’s purchase verification) to prevent unauthorized transactions.</li>
+        <li>Reverse engineer, decompile, disassemble, or attempt to derive the source code or underlying algorithms of the Service.</li>
+        <li>Modify, translate, adapt, or create derivative works based on the Service.</li>
+        <li>Rent, lease, lend, sell, sublicense, assign, distribute, publish, or transfer the Service or any of its features to any third party.</li>
+        <li>Remove, alter, or obscure any proprietary notices (including copyright and trademark notices) of Alchemical Solutions or its licensors.</li>
+        <li>Use the Service in any manner that violates applicable local, state, national, or international laws or regulations.</li>
     </ul>
 
-    <h3>1.3 Data Protection & Privacy Controls</h3>
-    <p>By using our Services, you acknowledge that our third-party advertising partners and backend services (including Microsoft PlayFab) may collect, process, and transfer your data globally.</p>
+    <h2>3. Account Registration and Eligibility</h2>
+    <h3>3.1 Age Requirements</h3>
+    <p>You must be at least 13 years of age (or the legal minimum age in your jurisdiction) to create an account or use the Service. If you are under 18, you represent that you have reviewed this Agreement with your parent or legal guardian and that they accept these terms on your behalf.</p>
+
+    <h3>3.2 Account Security</h3>
+    <p>To access certain features of 9 to Zen, you may be required to register an account. You are responsible for maintaining the confidentiality of your login credentials and for all activities that occur under your account. You agree to notify us immediately of any unauthorized use of your account.</p>
+
+    <h2>4. Free Trials and "Prompt to Buy" Model</h2>
+    <h3>4.1 Free Trial Access</h3>
+    <p>Alchemical Solutions may offer new users temporary, complimentary access to premium features of 9 to Zen (including "Ascend Level" privileges) ("Free Trial").</p>
     <ul>
-        <li><strong>US State Privacy Rights:</strong> If you are a resident of California, Virginia, Colorado, or other US states with active comprehensive privacy legislation, you maintain the right to opt out of the "sale" or "sharing" of your personal information for targeted advertising. You may exercise these rights via our in-game privacy settings menu or through your device's global privacy controls.</li>
-        <li><strong>International Users (EEA/UK/Switzerland):</strong> If you are accessing the Services from the European Economic Area or United Kingdom, data collected via your Zen Profile will be transferred outside the EEA/UK to servers operated by our backend providers in the United States. Such transfers are governed by standard contractual clauses or recognized data privacy frameworks.</li>
+        <li><strong>No Payment Method Required:</strong> Free Trials do not require you to submit credit card, billing, or financial payment details to initiate access.</li>
+        <li><strong>Duration:</strong> The exact duration and scope of the Free Trial will be clearly communicated during account signup or within the application interface.</li>
     </ul>
 
-    <h2>2. USER PROFILES & IDENTITY ("ZEN PROFILE")</h2>
-    <p>9 to Zen™ utilizes a "Guest First" approach designed to optimize player friction and maintain privacy.</p>
-    <h3>2.1 Anonymous Seeker (Guest Status)</h3>
-    <p>Upon launching 9 to Zen™, you begin your experience as an "Anonymous Seeker." No account creation or authentication is required. All game progress, including your "Trove tile count" and High Scores, is stored locally on your device.</p>
-    <p><strong>CRITICAL WARNING:</strong> If you delete the app, change devices, or lose or damage your device while operating as an Anonymous Seeker, your data and progress cannot be recovered by Alchemical Solutions LLC.</p>
-
-    <h3>2.2 Cloud Sync & The Zen Profile ("Protect Your Flow")</h3>
-    <p>To safeguard your progress, you may choose to link your account via our "Cloud Sync" feature. This creates a unified "Zen Profile" managed by our game-focused backend service provider, Microsoft PlayFab.</p>
+    <h3>4.2 Non-Converting Expiration & "Prompt to Buy"</h3>
     <ul>
-        <li><strong>Benefits:</strong> The Zen Profile securely handles your player identity, cross-platform authentication, profile management, leaderboards, and syncs your "Ascend Level" (Pro status) across multiple iOS and Android devices.</li>
+        <li><strong>No Automatic Billing:</strong> Free Trials <strong>do not</strong> automatically convert into paid subscriptions or one-time purchases upon expiration. You will <strong>not</strong> be charged automatically at the end of your Free Trial.</li>
+        <li><strong>Trial Expiration:</strong> Upon reaching the end of your Free Trial period, your access to premium features and Ascend Level capabilities will automatically pause or revert to the standard free/base tier of the Service.</li>
+        <li><strong>In-App Purchase Prompts:</strong> Following trial expiration (or during the trial window), you will receive in-app prompts offering you the option to purchase a paid license or subscription ("Prompt to Buy"). Continued access to premium features requires your affirmative, explicit purchase action.</li>
     </ul>
 
-    <h3>2.3 Leaderboard Names and Automated Moderation</h3>
-    <p>By participating in 9 to Zen™ leaderboards, you agree that your chosen leaderboard name and score may be displayed publicly to other users. When establishing a "Zen Profile" name, you agree not to use profanity, hate speech, or infringing trademarks. Alchemical Solutions LLC utilizes automated systems and algorithmic moderation tools to screen, filter, and modify user-generated text. We reserve the absolute right to unilaterally alter your public leaderboard name to "Anonymous Seeker" or a randomized generic placeholder if our systems flag your name as a violation of our community standards, without notice or right of appeal.</p>
+    <h3>4.3 Preservation of User Data and Progress</h3>
+    <p>Any user progress, customization, or data generated during your Free Trial (such as Ascend Level metrics or saved preferences) will be retained on your account for a period of at least ninety (90) days following trial expiration. If you choose to complete a purchase during this period, your progress will be preserved seamlessly. If no purchase is made within this window, Alchemical Solutions reserves the right to archive, reset, or delete non-essential trial data in accordance with our Privacy Policy.</p>
 
-    <h2>3. GAMEPLAY MECHANICS & GAME ECONOMY</h2>
-    <h3>3.1 The 7-Day Matrix Loop</h3>
-    <p>Players can earn fractions or whole numbers of "magic 9 tiles" via our daily login and gameplay mechanisms. These rewards utilize a 7-Day Matrix Loop incorporating Long-Term Milestone Multipliers at Day 14 and Day 30.</p>
+    <h3>4.4 Modification of Trials</h3>
+    <p>Alchemical Solutions reserves the right, in its sole discretion, to modify, suspend, or terminate Free Trial offers at any time without prior notice or liability.</p>
+
+    <h2>5. Purchases, Fees, and Payment Terms</h2>
+    <h3>5.1 Affirmative Purchases</h3>
+    <p>If you decide to upgrade to a premium tier or purchase Ascend Level access following a Free Trial, you agree to pay all applicable fees, including relevant taxes, as presented at the time of purchase.</p>
+
+    <h3>5.2 Payment Processing and App Store Platforms</h3>
+    <p>Purchases made within the 9 to Zen application are processed via authorized third-party billing providers or digital distribution platforms (e.g., Apple App Store, Google Play Store). Transactions are governed by the respective platform’s terms of service and payment policies. Alchemical Solutions does not directly collect, store, or process raw credit card information.</p>
+
+    <h3>5.3 Refund Policy</h3>
+    <p>Because you are provided a Free Trial period to evaluate the Service prior to purchase, all post-conversion purchases are <strong>final and non-refundable</strong>, except where explicitly required by applicable law or governed by the refund policies of the App Store or Google Play Store through which the transaction was completed.</p>
+
+    <h2>6. Intellectual Property Rights</h2>
+    <p>The Service, including all text, graphics, user interfaces, visual interfaces, software code, audio tracks, trademarked names (including "9 to Zen" and "Ascend Level"), logos, and overall look and feel, is the exclusive property of Alchemical Solutions or its licensors and is protected by intellectual property, trademark, and copyright laws. Except for the limited license granted under Section 2, nothing in this Agreement transfers any right, title, or interest in or to the Service to you.</p>
+
+    <h2>7. Privacy and Data Protection</h2>
+    <p>Your privacy is important to us. Our collection, use, and disclosure of personal data in connection with your use of 9 to Zen and participation in Free Trials are governed by our <strong>Privacy Center</strong> document, accessible at <a href="https://alchemical-solutions.com/9-to-Zen/legal/privacy-center.html">https://alchemical-solutions.com/9-to-Zen/legal/privacy-center.html</a>. By using the Service, you consent to our data collection practices as described therein.</p>
+
+    <h2>8. Termination and Suspension</h2>
+    <h3>8.1 Termination by You</h3>
+    <p>You may terminate this Agreement at any time by deleting the 9 to Zen application from your device and ceasing all use of the Service.</p>
+
+    <h3>8.2 Termination or Suspension by Us</h3>
+    <p>Alchemical Solutions reserves the right to suspend or terminate your account or access to the Service, in whole or in part, without prior notice, if:</p>
     <ul>
-        <li><strong>Caps:</strong> All Long-Term Milestone Multipliers strictly cap at Day 30 and beyond.</li>
-        <li><strong>Ascend Multiplier:</strong> Users with active Ascend Level status receive a permanent 2x daily streak multiplier during the period of active status.</li>
+        <li>You violate any provision of this Agreement or associated legal guidelines.</li>
+        <li>We discontinue offering the Service or any material part thereof.</li>
+        <li>Required to do so by applicable legal process or law enforcement request.</li>
     </ul>
 
-    <h3>3.2 Connectivity Requirements</h3>
-    <p>To maintain game integrity, system modifiers, daily streaks, and active streak data require a secure, live connection to our cloud server (via Microsoft PlayFab) during the 9 to Zen™ startup initialization. If a connection cannot be established, active streak modifiers may fail to sync or validate.</p>
+    <h3>8.3 Effect of Termination</h3>
+    <p>Upon termination, all licenses granted to you herein will immediately terminate, and you must cease all use of the Application and delete all copies from your devices. Sections 5, 6, 8, 9, 10, and 11 shall survive termination.</p>
 
-    <h3>3.3 Nature of Virtual Items and No Vested Rights</h3>
-    <p>All "magic 9 tiles," "Streak Protection Shields," metrics, and high scores earned, bought, or awarded within 9 to Zen™ constitute a limited, non-transferable, revocable license to use those features solely within the game application. These items possess no real-world monetary value, do not constitute private property, and cannot be exchanged, sold, or transferred for legal fiat currency or real-world goods.</p>
-    <p>Alchemical Solutions LLC retains absolute control over the pricing, availability, and balance of all virtual items. We reserve the unrestricted right to modify, adjust, reprice, or wipe virtual currency, tile yields, or streak matrices at our sole discretion for balancing purposes, without any liability or compensation to you for "lost value."</p>
+    <h2>9. Disclaimer of Warranties</h2>
+    <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE SERVICE IS PROVIDED ON AN <strong>"AS IS"</strong> AND <strong>"AS AVAILABLE"</strong> BASIS, WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND. ALCHEMICAL SOLUTIONS DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, ACCURACY, AND NON-INFRINGEMENT.</p>
 
-    <h2>4. ADVERTISEMENTS & THIRD-PARTY SERVICES</h2>
-    <p>The free tier of 9 to Zen™ contains advertisements. These include intermittent interstitial ads, banner ads, and optional reward ads.</p>
-    <h3>4.1 Ad Networks</h3>
-    <p>We partner with third-party advertising networks to serve ads, including Google AdMob, AppLovin, Unity Ads, Liftoff Monetize (Vungle), Mintegral, Pangle, and InMobi.</p>
-    <h3>4.2 Disclaimer of Third-Party Actions</h3>
-    <p>By playing 9 to Zen™, you acknowledge that these third-party networks may collect data according to their own privacy policies. Alchemical Solutions LLC does not endorse, warrant, or assume responsibility for the content, products, or practices of any third-party advertisements.</p>
+    <h2>10. Limitation of Liability</h2>
+    <p>TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL ALCHEMICAL SOLUTIONS, ITS AFFILIATES, OFFICERS, DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING OUT OF OR IN CONNECTION WITH YOUR USE OF OR INABILITY TO USE THE SERVICE.</p>
 
-    <h2>5. IN-GAME PURCHASES & "ASCEND LEVEL" (PRO STATUS)</h2>
-    <p>Users may purchase the premium tier of 9 to Zen™, known as "Ascend Level" (or Pro Level), through Apple App Store or Google Play billing systems.</p>
-    <h3>5.1 Pricing & Billing</h3>
-    <p>By purchasing Ascend Level status, you authorize Alchemical Solutions LLC to charge your account a single, one-time fee of $9.99 USD (plus applicable taxes).</p>
-    <ul>
-        <li><strong>No Renewals:</strong> This is a single, non-recurring charge.</li>
-    </ul>
+    <h2>11. Governing Law and Dispute Resolution</h2>
+    <h3>11.1 Governing Law</h3>
+    <p>This Agreement shall be governed by and construed in accordance with the laws of the jurisdiction in which Alchemical Solutions is organized, without giving effect to any principles of conflicts of law.</p>
 
-    <h3>5.2 Permanent Access & Streak Shields</h3>
-    <p>Purchasing Ascend Level grants permanent, unrestricted access to all Ascend features solely for the operational life of the game application.</p>
-    <ul>
-        <li><strong>LIFE OF THE GAME DISCLAIMER:</strong> If Alchemical Solutions LLC decides to shut down, sunset, or discontinue 9 to Zen™, your access to Ascend features will terminate instantly. Alchemical Solutions LLC is under no obligation to issue financial refunds.</li>
-        <li><strong>Streak Protection Shields:</strong> Ascend Level users receive two (2) Streak Protection Shields per month.</li>
-        <li><strong>No Rollover:</strong> Unused Streak Shields expire at the end of each 30-day cycle.</li>
-    </ul>
+    <h3>11.2 Informal Dispute Resolution</h3>
+    <p>Before filing a formal claim, you agree to attempt to resolve any dispute informally by contacting Alchemical Solutions at <a href="mailto:contact@alchemical-solutions.com">contact@alchemical-solutions.com</a>.</p>
 
-    <h3>5.3 Platform Terms & Refunds</h3>
-    <p>All financial transactions are handled and processed directly by Apple Inc. or Google LLC. Alchemical Solutions LLC does not directly process payments or offer direct refunds.</p>
+    <h2>12. Severability and Waiver</h2>
+    <p>If any provision of this Agreement is held to be invalid, illegal, or unenforceable, the remaining provisions shall continue in full force and effect.</p>
 
-    <h2>6. TRIAL CONVERSION & DISCLOSURES</h2>
-    <p>We may offer a 7-day free trial for the Ascend Level tier.</p>
-    <ul>
-        <li><strong>Automatic Conversion:</strong> By initiating the trial, you authorize a charge of $9.99 USD at the conclusion of the 7-day period (Day 8).</li>
-        <li><strong>Cancellation Requirement:</strong> You must manually cancel the trial in your platform settings at least 24 hours before the trial ends to avoid being charged.</li>
-    </ul>
+    <h2>13. Changes to This Agreement</h2>
+    <p>We reserve the right to modify or replace this Agreement at any time in our sole discretion. Your continued use of the Service following the posting of updated terms constitutes your acceptance of the modifications.</p>
 
-    <h2>7. INTELLECTUAL PROPERTY & LICENSE</h2>
-    <p>Alchemical Solutions LLC grants you a limited, non-exclusive, non-transferable, revocable license to play 9 to Zen™ for personal, non-commercial use. All rights, title, and interest in the Services remain the exclusive property of Alchemical Solutions LLC.</p>
+    <h2>14. Contact Information</h2>
+    <p>If you have any questions or concerns regarding this Terms of Service & EULA, please contact us at:</p>
+    <p>
+        <strong>Alchemical Solutions Legal Support</strong><br>
+        Website Legal Center: <a href="https://alchemical-solutions.com/9-to-Zen/legal/">https://alchemical-solutions.com/9-to-Zen/legal/</a><br>
+        Email: <a href="mailto:contact@alchemical-solutions.com">contact@alchemical-solutions.com</a>
+    </p>
 
-    <h2>8. LIMITATION OF LIABILITY & DISCLAIMERS</h2>
-    <p>THE SERVICES ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS. ALCHEMICAL SOLUTIONS LLC DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED. OUR TOTAL LIABILITY SHALL NOT EXCEED THE AMOUNT PAID BY YOU IN THE 12 MONTHS PRECEDING THE CLAIM.</p>
-
-    <h2>9. DISPUTE RESOLUTION & GOVERNING LAW</h2>
-    <p>These Terms are governed by the laws of the State of Delaware. Any disputes will be resolved through binding arbitration administered by the American Arbitration Association (AAA). You waive the right to participate in any class action proceedings.</p>
-
-    <h2>10. UNILATERAL AMENDMENTS & SERVICE DISCONTINUATION</h2>
-    <p>We reserve the right to update these Terms at any time. Continued use of the Services constitutes acceptance. We also reserve the right to discontinue the Services at any time without liability.</p>
-
-    <h2>11. CONTACT INFORMATION</h2>
-    <p>For questions, customer support, or privacy inquiries, please contact:</p>
-    <p><strong>Alchemical Solutions LLC</strong><br>
-    Email: contact@alchemical-solutions.com</p>
-
-    <a href="index.html" class="back-link">&larr; Back to Legal & Privacy Overview</a>
+    <div class="footer">
+        &copy; 2026 Alchemical Solutions LLC. All rights reserved.
+    </div>
+</div>
 
 </body>
 </html>
