@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>9💫 to Zen™</title>
+<meta name="robots" content="noindex">
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #0b0e0c;
+    --card: #14231a;
+    --border: #2a4536;
+    --gold: #eac784;
+    --gold-strong: #d4af37;
+    --text: #f2efe9;
+    --muted: #9db3a4;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background: radial-gradient(circle at 50% -10%, #1c3324 0%, var(--bg) 60%);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .card {
+    width: 100%;
+    max-width: 420px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 32px 28px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  }
+  .brand {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--gold);
+    letter-spacing: 1px;
+    margin: 0 0 4px;
+  }
+  .headline {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 18px 0 6px;
+    line-height: 1.4;
+  }
+  .sub {
+    font-size: 14px;
+    color: var(--muted);
+    margin: 0 0 24px;
+    line-height: 1.5;
+  }
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 15px 18px;
+    border-radius: 14px;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    margin-bottom: 12px;
+    border: 1px solid transparent;
+    transition: transform 0.1s ease;
+  }
+  .btn:active { transform: scale(0.98); }
+  .btn-primary {
+    background: var(--gold-strong);
+    color: #101f16;
+  }
+  .btn-secondary {
+    background: transparent;
+    color: var(--text);
+    border-color: var(--border);
+  }
+  .code-box {
+    margin-top: 18px;
+    padding: 12px 14px;
+    background: #0e1712;
+    border: 1px dashed var(--border);
+    border-radius: 12px;
+    font-size: 12px;
+    color: var(--muted);
+    word-break: break-all;
+  }
+  .code-value {
+    display: block;
+    margin-top: 6px;
+    color: var(--gold);
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 12px;
+  }
+  .status {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 16px;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <p class="brand">9💫 to Zen™</p>
+    <p class="headline" id="headline">Loading…</p>
+    <p class="sub" id="subtext"></p>
+
+    <a class="btn btn-primary" id="storeBtn" href="#">Get the App</a>
+    <a class="btn btn-secondary" id="openAppBtn" href="#">Already have the app? Open it</a>
+
+    <div class="code-box" id="codeBox" style="display:none">
+      Can't auto-open? Copy this code and paste it in the app:
+      <span class="code-value" id="codeValue"></span>
+    </div>
+    <p class="status" id="status"></p>
+  </div>
+
+<script>
+(function () {
+  var params = new URLSearchParams(window.location.search);
+  var type = params.get('type') === 'invite' ? 'invite' : 'challenge';
+  var code = params.get('code') || '';
+
+  var headline = document.getElementById('headline');
+  var subtext = document.getElementById('subtext');
+  var storeBtn = document.getElementById('storeBtn');
+  var openAppBtn = document.getElementById('openAppBtn');
+  var codeBox = document.getElementById('codeBox');
+  var codeValue = document.getElementById('codeValue');
+  var status = document.getElementById('status');
+
+  // Mirrors ChallengeCode.js's encode/decode so this static page can show a
+  // friendly "X challenges you to beat Y" line without needing the app.
+  function decodeChallengeCode(raw) {
+    var PREFIX = 'ZC1:';
+    if (typeof raw !== 'string' || raw.indexOf(PREFIX) !== 0) return null;
+    try {
+      var b64 = raw.slice(PREFIX.length).replace(/-/g, '+').replace(/_/g, '/');
+      while (b64.length % 4) b64 += '=';
+      var binary = atob(b64);
+      var bytes = new Uint8Array(binary.length);
+      for (var i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+      var data = JSON.parse(new TextDecoder().decode(bytes));
+      if (!data || typeof data.l === 'undefined' || !data.s) return null;
+      return { levelId: data.l, seed: data.s, score: data.sc || 0, name: data.n || 'A Seeker' };
+    } catch (e) {
+      return null;
+    }
+  }
+
+  var ua = navigator.userAgent || '';
+  var isIOS = /iPad|iPhone|iPod/.test(ua);
+  var isAndroid = /Android/.test(ua);
+
+  // TODO: replace with your real App Store / Play Store listing URLs once
+  // published (e.g. https://apps.apple.com/app/id<NUMERIC_ID> and
+  // https://play.google.com/store/apps/details?id=com.alchemicalsolutions.ninetozen).
+  // These search links work today without needing that ID yet.
+  var APP_STORE_URL = 'https://apps.apple.com/search?term=9%20to%20Zen%20Alchemical%20Solutions';
+  var PLAY_STORE_URL = 'https://play.google.com/store/search?q=9%20to%20Zen%20Alchemical%20Solutions&c=apps';
+  storeBtn.href = isAndroid ? PLAY_STORE_URL : APP_STORE_URL;
+  storeBtn.textContent = isAndroid ? 'Get it on Google Play' : 'Get it on the App Store';
+
+  var deepLink = 'ninetozen://' + type + '?code=' + encodeURIComponent(code);
+  openAppBtn.href = deepLink;
+
+  if (type === 'challenge') {
+    var decoded = decodeChallengeCode(code);
+    if (decoded) {
+      headline.textContent = '🎯 ' + decoded.name + ' challenges you!';
+      subtext.textContent = 'Beat their flow of ' + decoded.score.toLocaleString() + '💫 on the exact same board.';
+    } else {
+      headline.textContent = '🎯 You have been challenged!';
+      subtext.textContent = 'Open 9 to Zen to play the exact same board.';
+    }
+  } else {
+    headline.textContent = '🧘 You have a friend invite!';
+    subtext.textContent = "Open 9 to Zen to connect and compete on the Hall of Zen Scores.";
+  }
+
+  if (code) {
+    codeBox.style.display = 'block';
+    codeValue.textContent = code;
+  }
+
+  // If the app is already installed and Universal/App Links are verified,
+  // the OS intercepts this URL before this page ever loads. This script
+  // only runs for the "not intercepted" case, so the custom-scheme attempt
+  // below is a best-effort fallback (e.g. link-verification hasn't
+  // propagated yet), not the primary mechanism.
+  if (isIOS || isAndroid) {
+    status.textContent = 'Opening the app…';
+    window.location.href = deepLink;
+    setTimeout(function () {
+      status.textContent = "Didn't open? Use a button above.";
+    }, 1500);
+  }
+})();
+</script>
+</body>
+</html>
