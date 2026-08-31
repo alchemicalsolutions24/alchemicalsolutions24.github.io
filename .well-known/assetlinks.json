@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.alchemicalsolutions.ninetozen",
+      "sha256_cert_fingerprints": [
+        "B8:24:49:85:5B:7D:42:D8:66:70:5F:48:76:EC:52:7E:6B:3D:06:A0:AD:C0:2A:92:A0:C7:16:AE:44:09:B3:5B"
+      ]
+    }
+  }
+]
